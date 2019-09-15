@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="jLabel1" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                  <Component id="lblDatumPrijema" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPodbroj" max="32767" attributes="0"/>
+                  <Component id="lblPosiljalac" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                  <Component id="lblBrojAkta" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                  <Component id="lblOsnovniBroj" pref="79" max="32767" attributes="0"/>
+                  <Component id="lblOpis" alignment="1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="btnSnimi" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="comboOrgJedinica" alignment="0" pref="220" max="32767" attributes="0"/>
+                          <Component id="tfBrojAkta" alignment="0" max="32767" attributes="0"/>
+                          <Component id="tfPosiljalac" alignment="0" max="32767" attributes="0"/>
+                          <Component id="tfOpis" alignment="0" max="32767" attributes="0"/>
+                          <Component id="tfPodbroj" alignment="0" max="32767" attributes="0"/>
+                          <Component id="tfDatumPrijema" max="32767" attributes="0"/>
+                          <Component id="tfOsnovniBroj" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblOsnovniBroj" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfOsnovniBroj" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDatumPrijema" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfDatumPrijema" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tfPodbroj" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPodbroj" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblOpis" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfOpis" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblPosiljalac" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfPosiljalac" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblBrojAkta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfBrojAkta" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comboOrgJedinica" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnSnimi" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="29" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblOsnovniBroj">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Osnovni broj"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblOpis">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Opis"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPodbroj">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Podbroj"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDatumPrijema">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Datum prijema"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPosiljalac">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Po&#x161;iljalac"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblBrojAkta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Broj akta"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Org. jedinica"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tfOsnovniBroj">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfOsnovniBrojActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tfPodbroj">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfPodbrojActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tfPosiljalac">
+    </Component>
+    <Component class="javax.swing.JTextField" name="tfBrojAkta">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="comboOrgJedinica">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Racunovodsvo"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSnimi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Snimi"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSnimiActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tfOpis">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfOpisActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tfDatumPrijema">
+    </Component>
+  </SubComponents>
+</Form>
