@@ -7,6 +7,7 @@ package GUI.ProtokolIzlaz;
 
 import Db.OrgJediniceDAO;
 import Db.ProtokolIzlazDAO;
+import GUI.OrgJedinice.OrgJediniceGUI;
 import Util.HelpClass;
 import java.awt.HeadlessException;
 import java.io.IOException;
@@ -19,6 +20,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import model.OrgJedinice;
 import model.ProtokolIzlaz;
@@ -193,8 +195,20 @@ public class UnosProtokolIzlazGUI extends javax.swing.JDialog {
 
     private void btnSnimiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnimiActionPerformed
         ProtokolIzlazDAO db = new ProtokolIzlazDAO();
-
+        OrgJediniceDAO datab = new OrgJediniceDAO();
         try {
+
+            if (datab.getAllOrgJed().isEmpty()) {
+                int confirm = JOptionPane.showConfirmDialog(null, "Niste unijeli niti jednu organizacionu jedinicu. Unesite organizacinu jedinicu");
+                if (confirm == 0) {
+                    this.dispose();
+                    JDialog dialog = new OrgJediniceGUI(new javax.swing.JFrame(), rootPaneCheckingEnabled);
+                    dialog.setTitle("Organizacione jedinice");
+                    dialog.setLocationRelativeTo(this);
+                    dialog.setVisible(true);
+                }
+                return;
+            }
 
             if (!HelpClass.isNum(tfRedniBroj.getText())) {
                 JOptionPane.showMessageDialog(rootPane, "Redni broj mora biti cijeli broj!");

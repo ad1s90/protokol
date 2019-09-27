@@ -7,6 +7,7 @@ package GUI.KnjigaUlaz;
 
 import Db.KnjigaUlazDAO;
 import Db.OrgJediniceDAO;
+import GUI.OrgJedinice.OrgJediniceGUI;
 import Util.HelpClass;
 import java.awt.HeadlessException;
 import java.io.IOException;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import model.KnjigaUlaz;
 import model.OrgJedinice;
@@ -41,9 +43,10 @@ public class UnosKnjigaUlazGUI extends javax.swing.JDialog {
         initComponents();
 
         OrgJediniceDAO datab = new OrgJediniceDAO();
+
         List<OrgJedinice> list;
         list = datab.getAllOrgJed();
-       
+
         comboOrgJedinica.setModel(new DefaultComboBoxModel(list.toArray()));
         tfPodbroj.requestFocus();
         String datum = HelpClass.localDateFormatter(LocalDate.now());
@@ -201,8 +204,21 @@ public class UnosKnjigaUlazGUI extends javax.swing.JDialog {
 
     private void btnSnimiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnimiActionPerformed
         KnjigaUlazDAO db = new KnjigaUlazDAO();
+        OrgJediniceDAO datab = new OrgJediniceDAO();
 
         try {
+
+            if (datab.getAllOrgJed().isEmpty()) {
+                int confirm = JOptionPane.showConfirmDialog(null, "Niste unijeli niti jednu organizacionu jedinicu. Unesite organizacinu jedinicu");
+                if (confirm == 0) {
+                    this.dispose();
+                    JDialog dialog = new OrgJediniceGUI(new javax.swing.JFrame(), rootPaneCheckingEnabled);
+                    dialog.setTitle("Organizacione jedinice");
+                    dialog.setLocationRelativeTo(this);
+                    dialog.setVisible(true);
+                }
+                return;
+            }
 
             if (!HelpClass.isNum(tfOsnovniBroj.getText())) {
                 JOptionPane.showMessageDialog(rootPane, "Osnovni broj mora biti cijeli broj!");
